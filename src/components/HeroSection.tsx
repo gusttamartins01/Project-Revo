@@ -30,23 +30,27 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 z-10 flex items-center min-h-screen">
-        <div className="flex-1 max-w-3xl">
-          <div className="w-24 h-24 bg-gradient-to-br from-primary via-primary/80 to-primary/60 rounded-3xl flex items-center justify-center mb-12 animate-pulse shadow-2xl shadow-primary/30">
-            <span className="text-background font-bold text-3xl">R</span>
+        <div className="flex-1 max-w-4xl">
+          <div className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-gradient-to-br from-primary via-primary/80 to-primary/60 rounded-3xl flex items-center justify-center mb-8 md:mb-12 animate-bounce shadow-2xl shadow-primary/30">
+            <img 
+              src="/lovable-uploads/22baf2dd-b724-4a2a-9b38-cb13cfbea051.png" 
+              alt="Revo Logo" 
+              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain filter brightness-0 invert"
+            />
           </div>
           
-          <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight animate-fade-in">
             {t('reachNextLevel')}
           </h1>
           
-          <div className="text-2xl md:text-5xl font-bold mb-12">
+          <div className="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-12">
             <span className="text-muted-foreground">Com </span>
             <span className="text-primary animate-pulse transition-all duration-500">
               {words[currentWord]}
             </span>
           </div>
 
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
+          <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full animate-slide-in-right"></div>
         </div>
       </div>
     </section>

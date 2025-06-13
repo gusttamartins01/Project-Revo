@@ -62,37 +62,37 @@ const WaitingListSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/95"></div>
       
       <div className="container mx-auto px-4 z-10 relative flex items-center min-h-screen">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
-          <div className="space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-gradient leading-tight">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center w-full">
+          <div className="space-y-6 md:space-y-8 text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-gradient leading-tight animate-fade-in">
               {t('beFirst')}
             </h2>
             
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0 animate-slide-up">
               {t('earlyAccess')}
             </p>
 
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
+            <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto lg:mx-0 animate-glow"></div>
           </div>
           
           <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/10 rounded-3xl blur-xl"></div>
-            <div className="relative bg-card/90 backdrop-blur-lg p-10 rounded-3xl border border-primary/30 shadow-2xl shadow-primary/10">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="absolute -inset-2 md:-inset-4 bg-gradient-to-r from-primary/20 to-primary/10 rounded-3xl blur-xl animate-glow"></div>
+            <div className="relative bg-card/95 backdrop-blur-lg p-6 md:p-8 lg:p-10 rounded-3xl border border-primary/30 shadow-2xl shadow-primary/10 animate-slide-up">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <Input
                     placeholder={t('name')}
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="bg-background/70 border-border/30 focus:border-primary transition-colors h-12 text-lg"
+                    className="bg-background/70 border-border/30 focus:border-primary transition-colors h-10 md:h-12 text-sm md:text-base lg:text-lg"
                   />
                   <Input
                     placeholder={t('phone')}
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     required
-                    className="bg-background/70 border-border/30 focus:border-primary transition-colors h-12 text-lg"
+                    className="bg-background/70 border-border/30 focus:border-primary transition-colors h-10 md:h-12 text-sm md:text-base lg:text-lg"
                   />
                 </div>
                 
@@ -102,7 +102,7 @@ const WaitingListSection = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="bg-background/70 border-border/30 focus:border-primary transition-colors h-12 text-lg"
+                  className="bg-background/70 border-border/30 focus:border-primary transition-colors h-10 md:h-12 text-sm md:text-base lg:text-lg"
                 />
                 
                 <Input
@@ -110,7 +110,7 @@ const WaitingListSection = () => {
                   value={formData.state}
                   onChange={(e) => setFormData({ ...formData, state: e.target.value })}
                   required
-                  className="bg-background/70 border-border/30 focus:border-primary transition-colors h-12 text-lg"
+                  className="bg-background/70 border-border/30 focus:border-primary transition-colors h-10 md:h-12 text-sm md:text-base lg:text-lg"
                 />
                 
                 <Textarea
@@ -121,15 +121,15 @@ const WaitingListSection = () => {
                     setIsTyping(e.target.value.length > 0);
                   }}
                   rows={4}
-                  className="bg-background/70 border-border/30 focus:border-primary transition-all duration-300 text-lg resize-none"
+                  className="bg-background/70 border-border/30 focus:border-primary transition-all duration-300 text-sm md:text-base lg:text-lg resize-none"
                 />
                 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-background py-4 text-xl font-bold transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30 group"
+                  className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-background py-3 md:py-4 text-base md:text-lg lg:text-xl font-bold transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30 group"
                 >
                   <span>{t('subscribe')}</span>
-                  <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </form>
             </div>
