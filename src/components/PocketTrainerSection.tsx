@@ -6,15 +6,19 @@ const PocketTrainerSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          {t('pocketTrainer')}
-        </h2>
-        
-        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-          {t('aiDescription')}
-        </p>
+    <section className="section-full bg-gradient-to-b from-background to-muted/20 relative">
+      <div className="container mx-auto px-4 text-center flex items-center min-h-screen">
+        <div className="w-full">
+          <h2 className="text-4xl md:text-6xl font-bold mb-12 text-gradient leading-tight">
+            {t('pocketTrainer')}
+          </h2>
+          
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
+            {t('aiDescription')}
+          </p>
+
+          <div className="mt-16 w-32 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
+        </div>
       </div>
     </section>
   );

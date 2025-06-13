@@ -16,35 +16,37 @@ const HeroSection = () => {
   }, [words.length]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="section-full relative overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80)',
+          backgroundImage: 'url(/lovable-uploads/f938c86d-19df-4d68-a232-6faadb9bfe61.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/90"></div>
       </div>
 
-      <div className="container mx-auto px-4 z-10 flex items-center">
-        <div className="flex-1 max-w-2xl">
-          <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-8 animate-pulse">
-            <span className="text-white font-bold text-2xl">R</span>
+      <div className="container mx-auto px-4 z-10 flex items-center min-h-screen">
+        <div className="flex-1 max-w-3xl">
+          <div className="w-24 h-24 bg-gradient-to-br from-primary via-primary/80 to-primary/60 rounded-3xl flex items-center justify-center mb-12 animate-pulse shadow-2xl shadow-primary/30">
+            <span className="text-background font-bold text-3xl">R</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
             {t('reachNextLevel')}
           </h1>
           
-          <div className="text-2xl md:text-4xl font-bold mb-8">
+          <div className="text-2xl md:text-5xl font-bold mb-12">
             <span className="text-muted-foreground">Com </span>
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent animate-pulse">
+            <span className="text-primary animate-pulse transition-all duration-500">
               {words[currentWord]}
             </span>
           </div>
+
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
         </div>
       </div>
     </section>

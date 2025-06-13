@@ -18,7 +18,7 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 134 100% 55%;
     --primary-foreground: 222 47% 11%;
 
     --secondary: 222 47% 11%;
@@ -35,18 +35,18 @@
 
     --border: 215 25% 27%;
     --input: 215 25% 27%;
-    --ring: 217 91% 60%;
+    --ring: 134 100% 55%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 222 47% 11%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 134 100% 55%;
     --sidebar-primary-foreground: 222 47% 11%;
     --sidebar-accent: 215 25% 27%;
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 215 25% 27%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 134 100% 55%;
   }
 
   [data-theme="light"] {
@@ -59,7 +59,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 217 91% 60%;
+    --primary: 134 100% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96%;
@@ -76,16 +76,16 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --ring: 134 100% 55%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 134 100% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 40% 96%;
     --sidebar-accent-foreground: 222 47% 11%;
     --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 134 100% 55%;
   }
 }
 
@@ -106,15 +106,21 @@
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+    background: linear-gradient(135deg, #00ff88, #00cc6a, #00aa55);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .gradient-border {
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4) padding-box,
-                linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4) border-box;
+    background: linear-gradient(135deg, #00ff88, #00cc6a, #00aa55) padding-box,
+                linear-gradient(135deg, #00ff88, #00cc6a, #00aa55) border-box;
     border: 2px solid transparent;
+  }
+
+  .section-full {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
   }
 }
