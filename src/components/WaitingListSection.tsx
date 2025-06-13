@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const WaitingListSection = () => {
   const { t } = useLanguage();
@@ -54,7 +54,7 @@ const WaitingListSection = () => {
       id="waiting-list" 
       className="section-full relative overflow-hidden"
       style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80)',
+        backgroundImage: 'url(https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -64,11 +64,6 @@ const WaitingListSection = () => {
       <div className="container mx-auto px-4 z-10 relative flex items-center min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
           <div className="space-y-8">
-            <div className="flex items-center space-x-3 mb-6">
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
-              <span className="text-primary font-semibold text-lg tracking-wide">EARLY ACCESS</span>
-            </div>
-            
             <h2 className="text-4xl md:text-6xl font-bold text-gradient leading-tight">
               {t('beFirst')}
             </h2>

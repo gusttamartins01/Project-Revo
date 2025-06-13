@@ -6,8 +6,20 @@ const PocketTrainerSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="section-full bg-gradient-to-b from-background to-muted/20 relative">
-      <div className="container mx-auto px-4 text-center flex items-center min-h-screen">
+    <section className="section-full relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95"></div>
+      </div>
+
+      <div className="container mx-auto px-4 text-center flex items-center min-h-screen relative z-10">
         <div className="w-full">
           <h2 className="text-4xl md:text-6xl font-bold mb-12 text-gradient leading-tight">
             {t('pocketTrainer')}

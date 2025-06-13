@@ -34,8 +34,20 @@ const PerformanceSection = () => {
   ];
 
   return (
-    <section className="section-full bg-gradient-to-b from-muted/20 to-background relative">
-      <div className="container mx-auto px-4 text-center flex items-center min-h-screen">
+    <section className="section-full relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1517963628607-235ccdd5476c?auto=format&fit=crop&q=80)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95"></div>
+      </div>
+
+      <div className="container mx-auto px-4 text-center flex items-center min-h-screen relative z-10">
         <div className="w-full">
           <h2 className="text-4xl md:text-6xl font-bold mb-20 text-gradient leading-tight">
             {t('strongerFaster')}

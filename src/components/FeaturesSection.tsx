@@ -28,8 +28,20 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="section-full bg-muted/10 relative">
-      <div className="container mx-auto px-4 flex items-center min-h-screen">
+    <section className="section-full relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1583500178690-5bb10800b5a8?auto=format&fit=crop&q=80)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/95"></div>
+      </div>
+
+      <div className="container mx-auto px-4 flex items-center min-h-screen relative z-10">
         <div className="w-full">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {features.map((feature, index) => (
