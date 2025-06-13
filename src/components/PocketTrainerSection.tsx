@@ -21,15 +21,15 @@ const PocketTrainerSection = () => {
 
       <div className="container mx-auto px-4 text-center flex items-center min-h-screen relative z-10">
         <div className="w-full">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-8 md:mb-12 text-gradient leading-tight animate-fade-in">
+          <h2 className="text-4xl md:text-6xl font-bold mb-12 text-gradient leading-tight">
             {t('pocketTrainer')}
           </h2>
           
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-5xl mx-auto leading-relaxed animate-slide-up">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
             {t('aiDescription')}
           </p>
 
-          <div className="mt-12 md:mt-16 w-24 md:w-32 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto animate-glow"></div>
+          <div className="mt-16 w-32 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
         </div>
       </div>
     </section>
