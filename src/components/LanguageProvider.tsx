@@ -15,6 +15,7 @@ const translations = {
   pt: {
     waitingList: 'Lista de espera',
     reachNextLevel: 'Chegou a hora de alcançar seu próximo nível',
+    with: 'Com',
     data: 'dados',
     intelligence: 'inteligência',
     revo: 'Revo',
@@ -46,6 +47,7 @@ const translations = {
   en: {
     waitingList: 'Waiting List',
     reachNextLevel: "It's time to reach your next level",
+    with: 'with',
     data: 'data',
     intelligence: 'intelligence',
     revo: 'Revo',
@@ -80,7 +82,17 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>('pt');
 
   const t = (key: string): string => {
-    return translations[language][key as keyof typeof translations.pt] || key;
+    const keys = key.split('.');
+    let result = translations[language];
+
+    for (const k of keys) {
+      if (result && typeof result === 'object' && k in result) {
+        result = result[k];
+      } else {
+        return key;
+      }
+    }
+    return typeof result === 'string' ? result : key;
   };
 
   return (

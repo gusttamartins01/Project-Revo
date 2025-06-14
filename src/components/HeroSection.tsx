@@ -40,7 +40,7 @@ const HeroSection = () => {
           </h1>
           
           <div className="text-2xl md:text-5xl font-bold mb-12">
-            <span className="text-muted-foreground">Com </span>
+            <span className="text-muted-foreground">{t(' with ')}</span>
             <span className="text-primary animate-pulse transition-all duration-500">
               {words[currentWord]}
             </span>

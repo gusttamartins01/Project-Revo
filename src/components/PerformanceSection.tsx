@@ -10,13 +10,13 @@ const PerformanceSection = () => {
     {
       icon: TrendingUp,
       value: '+47%',
-      label: 'Melhoria na força',
+      label: t('Melhoria na força'),
       color: 'text-primary'
     },
     {
       icon: Target,
       value: '92%',
-      label: 'Precisão técnica',
+      label: t('Precisão técnica'),
       color: 'text-primary'
     },
     {
@@ -28,7 +28,7 @@ const PerformanceSection = () => {
     {
       icon: Award,
       value: '15k+',
-      label: 'Treinos analisados',
+      label: t('Treinos analisados'),
       color: 'text-primary'
     }
   ];
