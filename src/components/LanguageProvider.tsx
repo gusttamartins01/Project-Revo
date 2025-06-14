@@ -42,7 +42,12 @@ const translations = {
     workoutComparison: 'Quero um comparativo com meus treinos anteriores.',
     validReps: 'Me ajudaria se mostrasse quantas repetições válidas fiz.',
     dataTraining: 'Quero treinar com dados, não no achismo.',
-    autoTips: 'Seria ótimo se essas dicas automáticas com base nos meus erros.'
+    autoTips: 'Seria ótimo se essas dicas automáticas com base nos meus erros.',
+    improvementInStrength: 'Melhoria na força',
+    technicalAccuracy: 'Precisão técnica',
+    fasterEvolution: 'Evolução mais rápida',
+    analyzedWorkouts: 'Treinos analisados'
+
   },
   en: {
     waitingList: 'Waiting List',
@@ -74,7 +79,11 @@ const translations = {
     workoutComparison: 'I want a comparison with my previous workouts.',
     validReps: 'It would help me if it showed how many valid reps I did.',
     dataTraining: 'I want to train with data, not guesswork.',
-    autoTips: 'It would be great if there were automatic tips based on my mistakes.'
+    autoTips: 'It would be great if there were automatic tips based on my mistakes.',
+    improvementInStrength: 'improvement In Strength',
+    technicalAccuracy: 'technical Accuracy',
+    fasterEvolution: 'faster Evolution',
+    analyzedWorkouts: 'analyzed Workouts'
   }
 };
 

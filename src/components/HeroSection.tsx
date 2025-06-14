@@ -21,8 +21,8 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80)',
-          backgroundSize: 'cover',
+          background: 'url(/lovable-uploads/acad.png) no-repeat center center',
+          backgroundSize: '100% 100%',
           backgroundPosition: 'center',
         }}
       >
@@ -40,7 +40,7 @@ const HeroSection = () => {
           </h1>
           
           <div className="text-2xl md:text-5xl font-bold mb-12">
-            <span className="text-muted-foreground">{t(' with ')}</span>
+            <span className="text-muted-foreground">{t('with')} </span>
             <span className="text-primary animate-pulse transition-all duration-500">
               {words[currentWord]}
             </span>
